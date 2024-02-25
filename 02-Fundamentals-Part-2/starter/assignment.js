@@ -144,3 +144,23 @@ const myCountry = {
 // console.log(myCountry.describe());
 myCountry.checkIsland();
 // console.log(myCountry.isIsland);
+
+// Assignment 10
+
+// for (let i = 0; i < 50; i++) {
+//   console.log(`Voter number ${i + 1} is voting`);
+// }
+
+// Assignment 11
+
+const listOfNeighbours = [
+  ["Canada", "Mexico"],
+  ["Spain"],
+  ["Norway", "Sweden", "Russia"],
+];
+
+// for (let i = 0; i < listOfNeighbours.length; i++) {
+//   for (let j = 0; j < listOfNeighbours[i].length; j++) {
+//     console.log(`Neighbour: ${listOfNeighbours[i][j]}`);
+//   }
+// }

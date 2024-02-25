@@ -137,3 +137,37 @@ const higherBMI =
       )}) is higher than John's BMI(${john.BMI.toFixed(2)})`;
 
 // console.log(higherBMI);
+
+// coding challenge4
+// Test data: 22, 295, 176, 440, 37, 105, 10, 1100, 86 and 52
+
+const bills1 = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips1 = [];
+const totals = [];
+let sum = 0;
+
+const calcTip1 = function (bills) {
+  for (let i = 0; i < bills.length; i++) {
+    let tip =
+      bills[i] >= 50 && bills[i] <= 300 ? bills[i] * 0.15 : bills[i] * 0.2;
+
+    tips1.push(tip);
+    totals[i] = tip + bills[i];
+  }
+  return tips1;
+};
+
+const newTips = calcTip1(bills1);
+
+const avgAmt = (totals) => {
+  for (let i = 0; i < totals.length; i++) {
+    sum = sum + totals[i];
+  }
+  return sum / totals.length;
+};
+
+const averageAmt = avgAmt(totals);
+console.log(bills1);
+console.log(newTips);
+console.log(totals);
+console.log(`Average Total: ${averageAmt}`);
